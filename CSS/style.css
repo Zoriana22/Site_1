@@ -586,7 +586,17 @@ margin-right: 4px;
  background-color: transparent;
  border: 3px solid var(--beige-first);
  border-radius: 16px;
- transition: background-color 0.3s ease-in-out;
+ transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.about-us-btn:focus,
+.about-us-btn:hover {
+ background-color: var(--beige-first);
+}
+
+.about-us-btn:active {
+ background-color: var(--beige-third);
+ border: 3px solid var(--beige-third);
 }
 
 .about-us-btn .btn__text {
